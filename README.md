@@ -1,1 +1,1 @@
-# golden_shoe_gatsby
+# golden_shoe_shop
