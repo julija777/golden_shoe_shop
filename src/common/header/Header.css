@@ -1,9 +1,9 @@
 /*---------------Head---------------------*/
 
 .head {
-    background-color: hsl(252, 19%, 20%);
+    background-color: #0e4675;
     padding: 10px 0;
-    color: #fff;
+    color: #ffd51e;
 }
 
 .head 
