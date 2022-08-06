@@ -11,9 +11,9 @@ const Search = () => {
         <div className="logo width">
           <img src={logo} alt="logo" />
         </div>
-        <div className="search-box">
+        <div className="search-box f_flex">
           <i className="fa fa-search"></i>
-          <input type="text" placeholder="Search" />
+          <input type='text' placeholder='Search...' />
           <span>All Categories</span>
           </div>
 
@@ -22,8 +22,8 @@ const Search = () => {
           <div className="cart">
             <Link to="/cart">
             <i className="fa fa-shopping-bag icon_circle"></i>
+            <span>0</span>
             </Link>
-<span>0</span>
         </div>
         </div>
       </div>
