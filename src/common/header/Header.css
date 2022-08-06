@@ -1,0 +1,21 @@
+/*---------------Head---------------------*/
+
+.head {
+    background-color: hsl(252, 19%, 20%);
+    padding: 10px 0;
+    color: #fff;
+}
+
+.head 
+i {
+    margin-right: 10px;
+}
+
+.head
+label {
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+/*---------------End of Head---------------------*/
+
