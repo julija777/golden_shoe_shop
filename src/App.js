@@ -1,8 +1,7 @@
-import React from 'react';
-import './App.css';
-import Header from './common/header/Header';
-// eslint-disable-next-line
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { useState } from "react"
+import "./App.css"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Header from "./common/Header/Header"
 
 function App() {
   return (
