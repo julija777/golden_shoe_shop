@@ -10,12 +10,12 @@ const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
   const pagenumber = match.params.pagenumber;
   return (
-    <div>123
-      {/* <Header />
+    <div>
+      <Header />
       <ShopSection keyword={keyword} pagenumber={pagenumber} />
       <CalltoActionSection />
       <ContactInfo />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
