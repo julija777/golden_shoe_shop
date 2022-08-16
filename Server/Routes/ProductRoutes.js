@@ -2,6 +2,7 @@ import express from "express";
 import asyncHandler from "express-async-handler";
 import Product from "./../Models/ProductModel.js";
 import protect from "./../Middleware/AuthMiddleware.js";
+import productsTest from './../data/Products.js';
 
 const productRoute = express.Router();
 
@@ -20,11 +21,16 @@ productRoute.get(
         }
       : {};
     const count = await Product.countDocuments({ ...keyword });
-    const products = await Product.find({ ...keyword })
-      .limit(pageSize)
-      .skip(pageSize * (page - 1))
-      .sort({ _id: -1 });
-    res.json({ products, page, pages: Math.ceil(count / pageSize) });
+    // const products = await Product.find({ ...keyword })
+    //   .limit(pageSize)
+    //   .skip(pageSize * (page - 1))
+    //   .sort({ _id: -1 });
+    res.json({
+      products: productsTest,
+      page,
+      pages: 10,
+      // pages: Math.ceil(count / pageSize)
+    });
   })
 );
 
@@ -32,7 +38,9 @@ productRoute.get(
 productRoute.get(
   "/:id",
   asyncHandler(async (req, res) => {
-    const product = await Product.findById(req.params.id);
+    // const product = await Product.findById(req.params.id);
+    const product =
+      productsTest.find((product) => String(product._id) === String(req.params.id));
     if (product) {
       res.json(product);
     } else {

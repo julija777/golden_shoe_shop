@@ -1,5 +1,6 @@
 const products = [
   {
+    _id: 1,
     name: "Velcro Ballerinas For Girls  (Pink)",
     image: "/images/6.png",
     description:
@@ -8,8 +9,18 @@ const products = [
     countInStock: 3,
     rating: 4,
     numReviews: 4,
+    reviews: [
+      {
+        _id: 1,
+        name: 'Elena',
+        rating: 5,
+        createdAt: '2020-02-08T09',
+        comment: 'Like everything',
+      }
+    ]
   },
   {
+    _id: 2,
     name: "Velcro Sneakers For Boys & Girls  (Blue)",
     image: "/images/5.png",
     description:
@@ -18,8 +29,18 @@ const products = [
     countInStock: 10,
     rating: 2,
     numReviews: 2,
+    reviews: [
+      {
+        _id: 1,
+        name: 'Elena',
+        rating: 5,
+        createdAt: '2020-02-08T09',
+        comment: 'Like everything',
+      }
+    ]
   },
   {
+    _id: 3,
     name: "Sesame Street Unisex-Child ELMO Puppet Slipper",
     image: "/images/4.png",
     description:
@@ -28,8 +49,18 @@ const products = [
     countInStock: 0,
     rating: 3.5,
     numReviews: 3,
+    reviews: [
+      {
+        _id: 1,
+        name: 'Elena',
+        rating: 5,
+        createdAt: '2020-02-08T09',
+        comment: 'Like everything',
+      }
+    ]
   },
   {
+    _id: 4,
     name: "Lace Casual Boots For Boys & Girls  (Tan)",
     image: "/images/3.png",
     description:
@@ -38,8 +69,18 @@ const products = [
     countInStock: 10,
     rating: 5,
     numReviews: 9,
+    reviews: [
+      {
+        _id: 1,
+        name: 'Elena',
+        rating: 5,
+        createdAt: '2020-02-08T09',
+        comment: 'Like everything',
+      }
+    ]
   },
   {
+    _id: 5,
     name: "Lace Walking Shoes For Boys & Girls  (Pink)",
     image: "/images/2.png",
     description:
@@ -48,8 +89,18 @@ const products = [
     countInStock: 7,
     rating: 2,
     numReviews: 2,
+    reviews: [
+      {
+        _id: 1,
+        name: 'Elena',
+        rating: 5,
+        createdAt: '2020-02-08T09',
+        comment: 'Like everything',
+      }
+    ]
   },
   {
+    _id: 6,
     name: "Women Red Heels Sandal",
     image: "/images/1.png",
     description:
@@ -58,6 +109,15 @@ const products = [
     countInStock: 0,
     rating: 0,
     numReviews: 0,
+    reviews: [
+      {
+        _id: 1,
+        name: 'Elena',
+        rating: 5,
+        createdAt: '2020-02-08T09',
+        comment: 'Like everything',
+      }
+    ]
   },
 ];
 
