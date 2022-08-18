@@ -48,5 +48,7 @@ the products, users, reviews are come from the local components.
 
 Socials not connected yet
 
+Pagination needs fixing
+
 
 </details>
